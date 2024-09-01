@@ -1,0 +1,55 @@
+
+
+html,
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 1rem;
+    padding-bottom: 0;
+    background-color: rgb(190, 46, 46);
+}
+
+nav {
+    text-align: center;
+}
+
+nav button {
+    margin: 1rem 0 0;
+    padding: 1rem 2rem 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    cursor: pointer;
+}
+
+.intro {
+    background-image: url(../assets/images/pizza.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.intro-heading {
+    text-align: center;
+    margin: 0;
+    padding-top: 150px;
+    font-size: 4.5rem;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.reserve-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.reserve-left {
+    width: 50%;
+}
+
+.reserve-right {
+    width: 50%;
+}
