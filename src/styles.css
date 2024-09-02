@@ -217,3 +217,33 @@ p.price {
     font-weight: 600;
     font-size: 1.5rem;
 }
+
+/* Contact Page Section */
+
+.contact-tab {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-container {
+    width: 50%;
+    padding: 2rem;
+}
+
+.contact-heading {
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contact-container h3 {
+    font-size: 1.9rem;
+}
+
+.contact-container p {
+    font-size: 1.2rem;
+}
+
+img {
+    width: 50%;
+}
