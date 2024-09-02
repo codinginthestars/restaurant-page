@@ -1,12 +1,15 @@
 import './styles.css';
 import Home from './home';
 import Menu from './Menu';
+import Contact from './Contact';
 
-Home();
+
 
 const homeBtn = document.getElementById("home");
 const menuBtn = document.getElementById("menu");
 const contactBtn = document.getElementById("contact");
+
+Menu();
 
 homeBtn.addEventListener("click", () => {
     removeAllContent();
@@ -17,6 +20,11 @@ menuBtn.addEventListener("click", () => {
     removeAllContent();
     Menu();
 });
+
+contactBtn.addEventListener("click", () => {
+    removeAllContent();
+    Contact();
+})
 
 const removeAllContent = () => {
     const content = document.getElementById("content");

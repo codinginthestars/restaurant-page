@@ -1,7 +1,5 @@
 
 
-
-
 const Home = () => {
     const content = document.querySelector("#content");
     content.className = "";
@@ -18,27 +16,60 @@ const Home = () => {
 
     intro.appendChild(introHeading);
 
-    // Reservation Section Elements
+    // Reservation & Hours Section Elements
 
     const reserveContainer = document.createElement("div");
     reserveContainer.classList.add("reserve-container");
+
+    // Service Hours Section
 
     const reserveLeft = document.createElement("div");
     reserveLeft.classList.add("reserve-left");
     reserveLeft.classList.add("reserve-section")
 
-    const reserveHeading = document.createElement("h2");
+    const reserveHeading = document.createElement("h3");
     reserveHeading.classList.add("reserve-heading");
     reserveHeading.innerText = "Are you in the mood for some pizza?";
 
     const reservePara = document.createElement("p");
-    reservePara.innerText = "WELL WE ARE!";
+    reservePara.innerText = "Our hours are:";
+
+    const monday = document.createElement("p");
+    monday.classList.add("hours");
+    monday.textContent = "Monday: 8am - 8pm";
+
+    const tuesday = document.createElement("p");
+    tuesday.classList.add("hours");
+    tuesday.textContent = "Tuesday: 8am - 8pm";
+
+    const wednesday = document.createElement("p");
+    wednesday.classList.add("hours");
+    wednesday.textContent = "Wednesday: 8am - 8pm";
+
+    const thursday = document.createElement("p");
+    thursday.classList.add("hours");
+    thursday.textContent = "Thursday: 8am - 8pm";
+
+    const friday = document.createElement("p");
+    friday.classList.add("hours");
+    friday.textContent = "Friday: 8am - 8pm";
+
+    const saturday = document.createElement("p");
+    saturday.classList.add("hours");
+    saturday.textContent = "Saturday: 8am - 8pm";
+
+    const sunday = document.createElement("p");
+    sunday.classList.add("hours");
+    sunday.textContent = "Sunday: 8am - 8pm";
+
+    // Reservation Section
 
     const reserveRight = document.createElement("div");
     reserveRight.classList.add("reserve-right");
     reserveRight.classList.add("reserve-section");
 
     const reserveHeadingTwo = document.createElement("h3");
+    reserveHeadingTwo.classList.add("reserve-heading")
     reserveHeadingTwo.innerText = "Make a Reservation";
 
     const reserveParaTwo = document.createElement("p");
@@ -53,6 +84,13 @@ const Home = () => {
 
     reserveLeft.appendChild(reserveHeading);
     reserveLeft.appendChild(reservePara);
+    reserveLeft.appendChild(monday);
+    reserveLeft.appendChild(tuesday);
+    reserveLeft.appendChild(wednesday);
+    reserveLeft.appendChild(thursday);
+    reserveLeft.appendChild(friday);
+    reserveLeft.appendChild(saturday);
+    reserveLeft.appendChild(sunday);
 
     reserveRight.appendChild(reserveHeadingTwo);
     reserveRight.appendChild(reserveParaTwo);
