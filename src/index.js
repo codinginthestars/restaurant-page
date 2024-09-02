@@ -9,7 +9,7 @@ const homeBtn = document.getElementById("home");
 const menuBtn = document.getElementById("menu");
 const contactBtn = document.getElementById("contact");
 
-Contact();
+Home();
 
 homeBtn.addEventListener("click", () => {
     removeAllContent();
